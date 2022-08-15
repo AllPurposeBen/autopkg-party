@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>local.autopkg-party.daily</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/opt/homebrew/bin:/usr/local/bin/:/usr/local/munki</string>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/Shared/autopkg/scripts/autopkg_party.sh</string>
+		<string>--all</string>
+	</array>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>9</integer>
+	</dict>
+	<key>StandardErrorPath</key>
+	<string>/tmp/local.autopkg-party.daily.stderr</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/local.autopkg-party.daily.stdout</string>
+</dict>
+</plist>

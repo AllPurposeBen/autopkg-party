@@ -1,0 +1,16 @@
+####
+#
+# This file has no shebang and should only be used for global variable sourcing.
+#
+# Please fill in any relevant values and rename "global_vars.txt" and keep it in the base of this repo.
+#
+
+S3_REPO_URL='' # URL for the munki repo S3 bucket, used by s3_sync.sh
+MUNKI_REPO_PATH='' # Local munki repo path, used for pretty much all tools
+AP_OVERRRIDE_PATH='' # Path to where you want ot keep your overrides
+AP_REPO_LIST_PATH='' # Path to where you keep your txt list of repos to clone
+AP_RECIPE_LIST_PATH='' # Path to where you keep your txt list of recipes to run
+SLACK_WEBHOOK_URL='' # Slackbot webhook URL, don't include "https://"
+SYNC_MUNKI_DOWN_COMMAND='' # Full command, with arguments, to accomplish an sync of the munki repo down from cloud
+SYNC_MUNKI_UP_COMMAND='' # Full command, with arguments, to accomplish an sync of the munki repo up from cloud
+LOG_FILES_TO_KEEP='14' # Number of log files to keep before auto pruning
